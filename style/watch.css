@@ -1,0 +1,644 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: #ededed;
+}
+
+:root {
+  --red: #e62129;
+  --fontcolorgrey: #353535;
+  --bgfooter: #1b1b1b;
+  --fontcolorwhite: #ffffff;
+  --colorinfooter: #9d9d9d;
+  --marginnav: 30px;
+  --hoverbtn: #d80021;
+  --paddingx: 20px;
+  --paddingy: 25px;
+  --bgtesti: #ededed;
+  --bginput: #e0e0e0;
+  --bgprofile: #2310ff;
+  --bgdarkmode: #171717;
+  --bgsectiondarkmode: #282828;
+  --bgcarddark: #393939;
+}
+
+/* float botton */
+
+.float-botton {
+  position: fixed;
+  z-index: 99;
+  bottom: 45px;
+  right: 25px;
+  font-size: 1.7rem;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 55px;
+  background-color: var(--red);
+  color: var(--fontcolorwhite);
+  width: 50px;
+  height: 50px;
+}
+
+.float-botton:hover {
+  background-color: var(--hoverbtn);
+}
+
+/* navbar */
+
+nav {
+  width: 100%;
+  background-color: var(--fontcolorwhite);
+}
+
+nav .nav-items {
+  color: var(--fontcolorwhite);
+  margin: 25px auto;
+  font-size: 1.5rem;
+}
+
+nav .collapse {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgfooter);
+  transition: 0.5s;
+  border-radius: 0 0 12px 12px;
+  height: 50vh;
+  justify-content: center;
+}
+
+nav .cari-nav {
+  display: none;
+}
+
+nav .profile-desktop {
+  display: none;
+}
+
+nav .profile-tab-mobile {
+  width: max-content;
+  margin: 20px;
+  display: grid;
+  margin: 0 auto;
+  font-size: 3rem;
+}
+
+nav .profile-tab-mobile .icon-keluar {
+  font-size: 2rem;
+  color: var(--hoverbtn);
+}
+
+/* navbar */
+
+/* main konten */
+
+section .cover-head {
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 560px;
+}
+
+section .cover-head p.judul-film {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+section .cover-head .cover-head-kanan {
+  display: flex;
+  justify-content: space-around;
+  width: 37%;
+  align-items: center;
+}
+
+section .cover-head .cover-head-kanan .add-ke-koleksi .icon-add {
+  color: var(--fontcolorgrey);
+  font-size: 1.5rem;
+}
+
+section .cover-head .cover-head-kanan .add-ke-koleksi .icon-add:hover {
+  color: var(--hoverbtn);
+}
+
+section .dark-mode {
+  font-size: 1.5rem;
+}
+
+section .dark-mode :nth-child(2) {
+  display: none;
+}
+
+section video {
+  background-color: var(--fontcolorwhite);
+}
+
+/* sinopsis */
+
+section.sinopsis-and-detail {
+  background-color: var(--fontcolorwhite);
+  margin: 40px 0;
+  padding: 20px;
+  border-radius: 32px 23px 0 0;
+}
+
+section.sinopsis-and-detail .sinopsis p.judul {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--fontcolorgrey);
+}
+
+section.sinopsis-and-detail .sinopsis p.desc {
+  color: var(--fontcolorgrey);
+  letter-spacing: 1px;
+  line-height: 27px;
+}
+
+/* sinopsis */
+
+/* detail */
+
+section.sinopsis-and-detail .detail {
+  margin-top: 45px;
+}
+
+section.sinopsis-and-detail .detail p.judul {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--fontcolorgrey);
+}
+
+section.sinopsis-and-detail .detail li {
+  list-style: none;
+  margin: 10px 0;
+  color: var(--fontcolorgrey);
+}
+
+/* detail */
+
+/* film populer */
+
+section.film-populer {
+  background-color: var(--fontcolorwhite);
+  margin: 40px 0;
+  padding: 20px;
+  border-radius: 32px 23px 0 0;
+}
+
+section.film-populer p.judul {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--fontcolorgrey);
+}
+
+section.film-populer .card {
+  display: grid;
+  margin: 30px auto;
+  border: none;
+  background-color: var(--bgtesti);
+  border-radius: 0 0 12px 12px;
+}
+
+section.film-populer .card:hover {
+  transform: translateY(-7px);
+  transition: 0.7s;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 25%);
+}
+
+section.film-populer .card .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.film-populer .card .card-body p.judul-film {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+section.film-populer .card .card-body .btn {
+  color: var(--fontcolorwhite);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  background-color: var(--red);
+}
+
+section.film-populer .card .card-body .btn:hover {
+  background-color: var(--hoverbtn);
+}
+
+/* film populer */
+
+/* rekomendasi */
+
+section.rekomendasi {
+  padding: 20px;
+  background-color: var(--fontcolorwhite);
+}
+
+section.rekomendasi p.judul-rekomendasi {
+  color: var(--fontcolorgrey);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+section.rekomendasi .card {
+  display: grid;
+  margin: 20px auto;
+  background-color: var(--bgtesti);
+  border: none;
+  border-radius: 0 0 12px 12px;
+}
+
+section.rekomendasi .card:hover {
+  transform: translateY(-7px);
+  transition: 0.7s;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 25%);
+}
+
+section.rekomendasi .card .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+section.rekomendasi .card .card-body p.judul-film {
+  font-size: 1.4rem;
+  font-weight: 500;
+}section.rekomendasi .card .btn.tonton {
+  background-color: var(--red);
+  display: grid;
+  margin: 1px auto;
+  margin-bottom: 30px;
+  width: 50%;
+  border-radius: 7px;
+  color: var(--fontcolorwhite);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+section.rekomendasi .card .btn.tonton:hover {
+  background-color: var(--hoverbtn);
+}
+
+/* rekomendasi */
+
+/* main konten */
+
+/* darkmode */
+
+.dark {
+  transition: 0.7s;
+  background-color: var(--bgdarkmode);
+}
+
+.dark nav {
+  transition: 0.7s;
+  background-color: var(--bgdarkmode);
+}
+
+.dark p.judul-film {
+  transition: 0.7s;
+  color: var(--fontcolorwhite);
+}
+
+.dark .dark-mode :nth-child(1) {
+  display: none;
+  transition: 0.7s;
+}
+
+.dark .dark-mode :nth-child(2) {
+  transition: 0.7s;
+  display: block;
+  color: var(--fontcolorwhite);
+}
+
+.dark section .cover-head .cover-head-kanan .add-ke-koleksi .icon-add {
+  color: var(--fontcolorwhite);
+}
+
+.dark section.sinopsis-and-detail,
+.dark section.film-populer,
+.dark section.rekomendasi {
+  background-color: var(--bgsectiondarkmode);
+}
+
+.dark .sinopsis-and-detail .detail li {
+  color: var(--fontcolorwhite);
+}
+
+.dark section.sinopsis-and-detail .sinopsis p,
+.dark section.sinopsis-and-detail .detail p,
+.dark section.film-populer p,
+.dark section.rekomendasi p,
+li {
+  color: var(--fontcolorwhite);
+}
+
+.dark section.film-populer .card,
+.dark section.rekomendasi .card {
+  background-color: var(--bgcarddark);
+}
+
+.dark .footer {
+  transition: 0.7s;
+  background-color: black;
+}
+
+/* darkmode */
+
+/* footer */
+
+.footer {
+  background-color: var(--bgfooter);
+  padding: 40px 43px;
+  color: white;
+}
+
+.footer .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer .body .logo {
+  /* margin: 30px 0; */
+  width: max-content;
+}
+
+.footer .body .kontak {
+  margin: 90px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .body p.judul {
+  font-size: 1.5rem;
+}
+
+.footer .body .kontak .telpon,
+.footer .body .kontak .gmail {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  font-size: 1rem;
+  margin: 7px 0;
+}
+
+.footer .body .kontak .icon-kontak {
+  margin-right: 12px;
+  font-size: 1.3rem;
+}
+
+.footer .body .sosmed {
+  margin: 5px 0;
+}
+
+.footer .body .sosmed .icon {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .body .sosmed .icon .icon-sosmed {
+  font-size: 1.4rem;
+}
+
+.footer p.copyright {
+  margin-top: 120px;
+  text-align: center;
+}
+
+/* footer */
+
+/* responsive */
+
+/* tablet */
+
+@media (min-width: 767px) and (max-width: 1010px) {
+  .bungkus,
+  .bungkus-rekomendasi {
+    margin: 0 20px;
+  }
+  section.sinopsis-and-detail,
+  section.film-populer,
+  section.rekomendasi {
+    border-radius: 13px;
+  }
+  section.film-populer {
+    margin: 40px 0;
+    padding: 20px;
+  }
+  section.film-populer p.judul {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  section.rekomendasi .card {
+    background-color: var(--bgtesti);
+    border: none;
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+/* desktop */
+
+@media (min-width: 1011px) {
+  /* navbar */
+  .float-botton {
+    bottom: 55px;
+    right: 35px;
+    width: 60px;
+    height: 60px;
+    line-height: 67px;
+    font-size: 2rem;
+  }
+  nav.navbar {
+    padding: 6px 66px;
+  }
+  nav .nav-items {
+    display: grid;
+    margin: 0 20px;
+    color: var(--fontcolorgrey);
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  nav .nav-items:hover::after,
+  nav .active::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--red);
+    margin-bottom: -4px;
+    transition: 0.9s;
+    width: 80%;
+    margin: 0 auto;
+  }
+  nav .collapse {
+    display: none;
+    align-items: center;
+    flex-direction: row;
+    height: max-content;
+    border-radius: 0;
+    background-color: var(--fontcolorwhite);
+  }
+  nav .profile-tab-mobile .icon-keluar {
+    display: none;
+  }
+  nav .cari-nav {
+    display: block;
+  }
+  nav .cari-nav .cari {
+    display: inline;
+    height: max-content;
+    position: relative;
+  }
+  nav .cari-nav .cari input {
+    border: none;
+    border: 2px solid var(--bginput);
+    width: 350px;
+    height: 45px;
+    border-radius: 7px;
+  }
+  nav .cari-nav .cari .icon-cari {
+    position: absolute;
+    background-color: var(--red);
+    color: var(--fontcolorwhite);
+    font-size: 1.3rem;
+    padding: 12px;
+    top: -11px;
+    right: 0;
+    border-radius: 0 7px 7px 0;
+  }
+  input:focus {
+    background-color: var(--fontcolorgrey);
+    border: var(--fontcolorgrey);
+    color: var(--fontcolorwhite);
+    transition: 0.9s;
+  }
+  nav .profile-desktop {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: var(--bgprofile);
+    margin: 0 30px;
+    border-radius: 100px;
+  }
+  nav .profile-desktop p {
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    color: var(--fontcolorwhite);
+    height: max-content;
+  }
+  nav .profile-tab-mobile {
+    display: none;
+  }
+  nav .dropdown-menu {
+    background-color: var(--fontcolorgrey);
+  }
+  nav .dropdown-menu .dropdown-item {
+    color: var(--fontcolorwhite);
+  }
+  nav .dropdown-menu .dropdown-item:hover {
+    background-color: var(--fontcolorgrey);
+  }
+  section .cover-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  section .cover-head .cover-head-kanan {
+    width: 18%;
+  }
+  .bungkus,
+  .bungkus-rekomendasi {
+    margin: 0 20px;
+  }
+  section.sinopsis-and-detail,
+  section.film-populer,
+  section.rekomendasi {
+    border-radius: 13px;
+  }
+  /* sinopsis,detail dan film pavorit */
+  section.film-populer .for-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .bungkus .body-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bungkus .body-content .sinopsis-and-detail {
+    width: 72%;
+  }
+  /* rekomendasi */
+  section.rekomendasi {
+    margin-bottom: 40px;
+  }
+  /* rekomendasi */
+  /* sinopsis,detail dan film pavorit */
+  /* darkmode */
+  .dark nav .collapse {
+    background-color: var(--bgdarkmode);
+  }
+  .dark nav .nav-items {
+    color: var(--fontcolorwhite);
+  }
+  .dark nav .cari-nav .cari input {
+    background-color: var(--fontcolorgrey);
+    border: none;
+  }
+  /* footer */
+  .footer .body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .body p.judul {
+    font-size: 1.3rem;
+  }
+  .footer .body .sosmed {
+    margin: 0px 0;
+    width: 20%;
+    margin-top: -30px;
+  }
+  .footer .body .sosmed .icon {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+  }
+  .footer .body .sosmed .icon :nth-child(1):hover {
+    color: var(--red);
+  }
+  .footer .body .sosmed .icon :nth-child(2):hover {
+    color: var(--red);
+  }
+  .footer .body .sosmed .icon :nth-child(3):hover {
+    color: var(--red);
+  }
+  .footer .body .sosmed .icon .icon-sosmed {
+    font-size: 2rem;
+  }
+  .footer p.copyright {
+    margin-top: 10px;
+  }
+  /* footer */
+}
+
+/* responsive */
