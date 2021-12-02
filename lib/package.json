@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.6.1",
+    "jquery": "^3.5.1",
+    "vanilla-tilt": "^1.7.2"
+  }
+}
