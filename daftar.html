@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="icon" href="assets/img/logo.png">
+
+    <link rel="stylesheet" href="style/login.css">
+
+    <title>Daftar</title>
+</head>
+
+<body>
+    <div class="card-body">
+        <div class="bungkus">
+
+            <form>
+                <h3 class="mb-5 text-center">Daftar</h3>
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Nama Pengguna</label>
+                    <br>
+                    <input type="email">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">Kata Sandi</label>
+                    <div class="password">
+                        <input id="myInput" type="password">
+                        <span class="eye" onclick="myFunction()">
+                            <i id="hide1" class="fa fa-eye"></i>
+                            <i id="hide2" class="fa fa-eye-slash"></i>
+                        </span>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Konfirmasi Kata Sandi</label>
+                        <div class="password">
+                            <input id="myInput1" type="password">
+                            <span class="eye" onclick="myFunction1()">
+                                <i id="hide3" class="fa fa-eye"></i>
+                                <i id="hide4" class="fa fa-eye-slash"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <a href="login.html" class="daftar btn text-white text-deocration-none">Daftar</a>
+
+                    <p class="tx text-center">Sudah memiliki akun? <a href="login.html" class="text-decoration-none text-danger">Masuk</a></p>
+            </form>
+            </div>
+
+        </div>
+        <!-- End Login -->
+
+        <!-- Optional JavaScript -->
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myInput");
+                var y = document.getElementById("hide1");
+                var z = document.getElementById("hide2");
+
+                if (x.type === 'password') {
+                    x.type = "text";
+                    y.style.display = "block";
+                    y.style.marginTop = "4px";
+                    z.style.display = "none";
+                } else {
+                    x.type = "password";
+                    y.style.display = "none";
+                    z.style.display = "block";
+                    z.style.marginTop = "4px";
+                }
+            }
+
+            function myFunction1() {
+                var x = document.getElementById("myInput1");
+                var a = document.getElementById("hide3");
+                var b = document.getElementById("hide4");
+
+                if (x.type === 'password') {
+                    x.type = "text";
+                    a.style.display = "block";
+                    a.style.marginTop = "4px";
+                    b.style.display = "none";
+                } else {
+                    x.type = "password";
+                    a.style.display = "none";
+                    b.style.display = "block";
+                    b.style.marginTop = "4px";
+                }
+            }
+        </script>
+
+</body>
+
+</html>
